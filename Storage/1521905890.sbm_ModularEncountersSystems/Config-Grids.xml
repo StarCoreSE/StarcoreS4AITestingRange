@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ConfigGrids xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EnableGlobalNPCWeaponRandomizer>true</EnableGlobalNPCWeaponRandomizer>
+  <EnableGlobalNPCShieldProvider>false</EnableGlobalNPCShieldProvider>
+  <WeaponReplacerBlacklist>
+    <string>fuck</string>
+  </WeaponReplacerBlacklist>
+  <WeaponReplacerWhitelist />
+  <WeaponReplacerTargetBlacklist />
+  <WeaponReplacerTargetWhitelist />
+  <RandomWeaponChance>100</RandomWeaponChance>
+  <RandomWeaponSizeVariance>-1</RandomWeaponSizeVariance>
+  <WeaponReplacerMassLimits>false</WeaponReplacerMassLimits>
+  <WeaponReplacerUseTotalGridMassMultiplier>false</WeaponReplacerUseTotalGridMassMultiplier>
+  <WeaponReplacerTotalGridMassMultiplier>1.2</WeaponReplacerTotalGridMassMultiplier>
+  <RandomizedWeaponsUseFullRange>false</RandomizedWeaponsUseFullRange>
+  <ShieldProviderChance>100</ShieldProviderChance>
+  <UseGlobalBlockReplacer>true</UseGlobalBlockReplacer>
+  <GlobalBlockReplacerReference />
+  <GlobalBlockReplacerProfiles>
+    <string>MES-Turret-InteriorToNpcInterior</string>
+  </GlobalBlockReplacerProfiles>
+  <UseNonPhysicalAmmoForNPCs>false</UseNonPhysicalAmmoForNPCs>
+  <RemoveContainerInventoryFromNPCs>false</RemoveContainerInventoryFromNPCs>
+  <UseMaxAmmoInventoryWeight>true</UseMaxAmmoInventoryWeight>
+  <MaxAmmoInventoryWeight>1500</MaxAmmoInventoryWeight>
+  <GlobalReplenishmentProfiles>
+    <string>MES-Replenishment-BaseRules</string>
+  </GlobalReplenishmentProfiles>
+  <AerodynamicsModAdvLiftOverride>false</AerodynamicsModAdvLiftOverride>
+  <StopCompromisedAiMovement>true</StopCompromisedAiMovement>
+  <ModVersion>2.68.3</ModVersion>
+</ConfigGrids>
