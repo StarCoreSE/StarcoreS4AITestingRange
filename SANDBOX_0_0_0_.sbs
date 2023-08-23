@@ -6,7 +6,13 @@
     <Z>0</Z>
   </Position>
   <SectorEvents>
-    <Events />
+    <Events>
+      <MyObjectBuilder_GlobalEventBase>
+        <SubtypeName>SpawnCargoShip</SubtypeName>
+        <Enabled>false</Enabled>
+        <ActivationTimeMs>803984</ActivationTimeMs>
+      </MyObjectBuilder_GlobalEventBase>
+    </Events>
   </SectorEvents>
   <AppVersion>1202124</AppVersion>
   <Environment>
@@ -20,57 +26,144 @@
   </Environment>
   <VoxelHandVolumeChanged>0</VoxelHandVolumeChanged>
   <SectorObjects>
-    <MyObjectBuilder_EntityBase xsi:type="MyObjectBuilder_CubeGrid">
-      <SubtypeName />
-      <EntityId>141774353466388427</EntityId>
+    <MyObjectBuilder_EntityBase xsi:type="MyObjectBuilder_InventoryBagEntity">
+      <SubtypeName>AstronautBackpack</SubtypeName>
+      <EntityId>101306022992142260</EntityId>
       <PersistentFlags>CastShadows InScene</PersistentFlags>
-      <Name>141774353466388427</Name>
+      <Name>101306022992142260</Name>
       <PositionAndOrientation>
-        <Position x="711.214599609375" y="-635.3236083984375" z="534.5255126953125" />
-        <Forward x="0.744178236" y="0.375392824" z="0.552520633" />
-        <Up x="-0.302348047" y="0.9268646" z="-0.222503036" />
+        <Position x="113.33930206298828" y="-140.69068908691406" z="154.2794189453125" />
+        <Forward x="-0.00306504942" y="-0.989903748" z="-0.141709268" />
+        <Up x="-0.0050317836" y="-0.141693234" z="0.989898" />
         <Orientation>
-          <X>-0.0866286755</X>
-          <Y>0.8767872</Y>
-          <Z>-0.170479178</Z>
-          <W>-0.441221654</W>
+          <X>-0.0004902543</X>
+          <Y>0.655091643</Y>
+          <Z>0.755543649</Z>
+          <W>0.00290483446</W>
         </Orientation>
       </PositionAndOrientation>
       <LocalPositionAndOrientation xsi:nil="true" />
-      <GridSizeEnum>Large</GridSizeEnum>
-      <CubeBlocks>
-        <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MotorRotor">
-          <SubtypeName>SubgridTop</SubtypeName>
-          <EntityId>140656759345714161</EntityId>
-          <Name>140656759345714161</Name>
-          <ColorMaskHSV x="0" y="-0.8" z="-0.15" />
-          <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
-          <ParentEntityId>0</ParentEntityId>
-          <YieldLastComponent>false</YieldLastComponent>
-        </MyObjectBuilder_CubeBlock>
-      </CubeBlocks>
-      <LinearVelocity x="-0.587216854" y="-1.30016041" z="-0.4537028" />
-      <AngularVelocity x="8.088789E-11" y="3.18480648E-13" z="-1.08554339E-10" />
-      <DisplayName>Large Grid 4487</DisplayName>
-      <DestructibleBlocks>true</DestructibleBlocks>
-      <IsRespawnGrid>false</IsRespawnGrid>
-      <LocalCoordSys>0</LocalCoordSys>
-      <TargetingTargets />
+      <ComponentContainer>
+        <Components>
+          <ComponentData>
+            <TypeId>MyTimerComponent</TypeId>
+            <Component xsi:type="MyObjectBuilder_TimerComponent">
+              <Repeat>false</Repeat>
+              <TimeToEvent>0</TimeToEvent>
+              <SetTimeMinutes>0</SetTimeMinutes>
+              <TimerEnabled>true</TimerEnabled>
+              <RemoveEntityOnTimer>true</RemoveEntityOnTimer>
+              <TimerType>Frame10</TimerType>
+              <FramesFromLastTrigger>2810</FramesFromLastTrigger>
+              <TimerTickInFrames>18000</TimerTickInFrames>
+              <IsSessionUpdateEnabled>true</IsSessionUpdateEnabled>
+            </Component>
+          </ComponentData>
+          <ComponentData>
+            <TypeId>MyInventoryBase</TypeId>
+            <Component xsi:type="MyObjectBuilder_Inventory">
+              <Items />
+              <nextItemId>0</nextItemId>
+              <Volume>0.4</Volume>
+              <Mass>9223372036854.775807</Mass>
+              <MaxItemCount>2147483647</MaxItemCount>
+              <Size xsi:nil="true" />
+              <InventoryFlags />
+              <RemoveEntityOnEmpty>true</RemoveEntityOnEmpty>
+            </Component>
+          </ComponentData>
+          <ComponentData>
+            <TypeId>MyUseObjectsComponentBase</TypeId>
+            <Component xsi:type="MyObjectBuilder_UseObjectsComponent">
+              <CustomDetectorsCount>1</CustomDetectorsCount>
+              <CustomDetectorsNames>
+                <string>inventory</string>
+              </CustomDetectorsNames>
+              <CustomDetectorsMatrices>
+                <Matrix>
+                  <M11>0.389302</M11>
+                  <M12>0</M12>
+                  <M13>0</M13>
+                  <M14>0</M14>
+                  <M21>0</M21>
+                  <M22>0.906025052</M22>
+                  <M23>0</M23>
+                  <M24>0</M24>
+                  <M31>0</M31>
+                  <M32>0</M32>
+                  <M33>0.282047033</M33>
+                  <M34>0</M34>
+                  <M41>5.96046448E-08</M41>
+                  <M42>0</M42>
+                  <M43>-0.00180975348</M43>
+                  <M44>1</M44>
+                  <Up>
+                    <X>0</X>
+                    <Y>0.906025052</Y>
+                    <Z>0</Z>
+                  </Up>
+                  <Down>
+                    <X>-0</X>
+                    <Y>-0.906025052</Y>
+                    <Z>-0</Z>
+                  </Down>
+                  <Right>
+                    <X>0.389302</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                  </Right>
+                  <Left>
+                    <X>-0.389302</X>
+                    <Y>-0</Y>
+                    <Z>-0</Z>
+                  </Left>
+                  <Forward>
+                    <X>-0</X>
+                    <Y>-0</Y>
+                    <Z>-0.282047033</Z>
+                  </Forward>
+                  <Backward>
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0.282047033</Z>
+                  </Backward>
+                  <Translation>
+                    <X>5.96046448E-08</X>
+                    <Y>0</Y>
+                    <Z>-0.00180975348</Z>
+                  </Translation>
+                </Matrix>
+              </CustomDetectorsMatrices>
+            </Component>
+          </ComponentData>
+          <ComponentData>
+            <TypeId>MyPhysicsComponentBase</TypeId>
+            <Component xsi:type="MyObjectBuilder_PhysicsBodyComponent">
+              <LinearVelocity x="0" y="0" z="0" />
+              <AngularVelocity x="0" y="0" z="0" />
+            </Component>
+          </ComponentData>
+        </Components>
+      </ComponentContainer>
+      <LinearVelocity x="0" y="0" z="0" />
+      <AngularVelocity x="0" y="0" z="0" />
+      <Mass>5</Mass>
+      <OwnerIdentityId>144115188075855873</OwnerIdentityId>
     </MyObjectBuilder_EntityBase>
     <MyObjectBuilder_EntityBase xsi:type="MyObjectBuilder_Character">
       <SubtypeName>Default_Astronaut</SubtypeName>
-      <EntityId>114083304321281423</EntityId>
+      <EntityId>109532698326523652</EntityId>
       <PersistentFlags>CastShadows InScene</PersistentFlags>
-      <Name>114083304321281423</Name>
+      <Name>109532698326523652</Name>
       <PositionAndOrientation>
-        <Position x="113.88523550179882" y="-140.36243686261358" z="150.10442230044811" />
-        <Forward x="0.0992198" y="0.06315545" z="-0.993059337" />
-        <Up x="-0.0001533525" y="-0.997983038" z="-0.06348389" />
+        <Position x="114.15829858338189" y="-140.59710924508818" z="153.79895725227919" />
+        <Forward x="-0.008917368" y="0.06306464" z="-0.9979696" />
+        <Up x="-0.000117814605" y="-0.9980094" z="-0.0630661" />
         <Orientation>
-          <X>-0.0496437252</X>
-          <Y>-0.0317149572</Y>
-          <Z>0.9982619</Z>
-          <W>0.00165399874</W>
+          <X>0.004458367</X>
+          <Y>-0.0315487</Y>
+          <Z>0.9994923</Z>
+          <W>-8.17899345E-05</W>
         </Orientation>
       </PositionAndOrientation>
       <LocalPositionAndOrientation xsi:nil="true" />
@@ -131,11 +224,11 @@
       </Battery>
       <LightEnabled>false</LightEnabled>
       <UsingLadder xsi:nil="true" />
-      <HeadAngle x="-2.32344818" y="0" />
-      <LinearVelocity x="1.86115012E-13" y="-1.1574477E-05" z="-7.332419E-07" />
+      <HeadAngle x="-8.519309" y="0" />
+      <LinearVelocity x="0" y="0" z="0" />
       <AutoenableJetpackDelay>0</AutoenableJetpackDelay>
       <JetpackEnabled>false</JetpackEnabled>
-      <ColorMaskHSV x="0.06666667" y="0.199999988" z="0.4029136" />
+      <ColorMaskHSV x="1" y="0" z="0" />
       <LootingCounter>0</LootingCounter>
       <DisplayName>Invalid</DisplayName>
       <IsInFirstPersonView>true</IsInFirstPersonView>
@@ -208,7 +301,7 @@
           <BlockOrientation Forward="Up" Up="Forward" />
           <ColorMaskHSV x="0" y="-0.8" z="0.55" />
           <SkinSubtypeId>SciFi_Armor</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <CustomName>Battery 4</CustomName>
           <ShowOnHUD>false</ShowOnHUD>
@@ -255,7 +348,7 @@
           <Min x="1" y="1" z="0" />
           <BlockOrientation Forward="Down" Up="Forward" />
           <ColorMaskHSV x="0.608333349" y="0.2" z="0.55" />
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <CustomName>Battery 5</CustomName>
           <ShowOnHUD>false</ShowOnHUD>
@@ -278,7 +371,7 @@
           <Min x="-1" y="1" z="0" />
           <BlockOrientation Forward="Down" Up="Forward" />
           <ColorMaskHSV x="0.608333349" y="0.2" z="0.55" />
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <CustomName>Battery 7</CustomName>
           <ShowOnHUD>false</ShowOnHUD>
@@ -301,7 +394,7 @@
           <Min x="1" y="-1" z="0" />
           <BlockOrientation Forward="Up" Up="Forward" />
           <ColorMaskHSV x="0.608333349" y="0.2" z="0.55" />
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <CustomName>Battery</CustomName>
           <ShowOnHUD>false</ShowOnHUD>
@@ -324,7 +417,7 @@
           <Min x="-1" y="-1" z="0" />
           <BlockOrientation Forward="Up" Up="Forward" />
           <ColorMaskHSV x="0.608333349" y="0.2" z="0.55" />
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <CustomName>Battery 3</CustomName>
           <ShowOnHUD>false</ShowOnHUD>
@@ -348,7 +441,7 @@
           <BlockOrientation Forward="Up" Up="Forward" />
           <ColorMaskHSV x="0" y="-0.8" z="0.55" />
           <SkinSubtypeId>SciFi_Armor</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <CustomName>Battery 2</CustomName>
           <ShowOnHUD>false</ShowOnHUD>
@@ -372,7 +465,7 @@
           <BlockOrientation Forward="Down" Up="Forward" />
           <ColorMaskHSV x="0" y="-0.8" z="0.55" />
           <SkinSubtypeId>SciFi_Armor</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <CustomName>Battery 8</CustomName>
           <ShowOnHUD>false</ShowOnHUD>
@@ -396,7 +489,7 @@
           <BlockOrientation Forward="Down" Up="Forward" />
           <ColorMaskHSV x="0" y="-0.8" z="0.55" />
           <SkinSubtypeId>SciFi_Armor</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <CustomName>Battery 6</CustomName>
           <ShowOnHUD>false</ShowOnHUD>
@@ -426,7 +519,7 @@
           <BlockOrientation Forward="Left" Up="Forward" />
           <ColorMaskHSV x="0" y="-0.8" z="0.55" />
           <SkinSubtypeId>SciFi_Armor</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <CustomName>Gravity Generator</CustomName>
           <ShowOnHUD>false</ShowOnHUD>
@@ -1204,7 +1297,7 @@
           <Min x="1" y="0" z="-3" />
           <BlockOrientation Forward="Right" Up="Forward" />
           <ColorMaskHSV x="0.319444448" y="0.2" z="0.55" />
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -1302,7 +1395,7 @@ https://discord.gg/starcore
           <BlockOrientation Forward="Backward" Up="Right" />
           <ColorMaskHSV x="0" y="-0.8" z="0.55" />
           <SkinSubtypeId>SciFi_Armor</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -1507,7 +1600,7 @@ https://discord.gg/starcore
           <Min x="-2" y="-2" z="2" />
           <BlockOrientation Forward="Left" Up="Backward" />
           <ColorMaskHSV x="0" y="-0.8" z="0.55" />
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <CustomName>Antenna Dish</CustomName>
           <ShowOnHUD>false</ShowOnHUD>
@@ -2097,7 +2190,7 @@ https://discord.gg/starcore
           <BlockOrientation Forward="Left" Up="Forward" />
           <ColorMaskHSV x="0" y="-0.8" z="0.55" />
           <SkinSubtypeId>SciFi_Armor</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>All</ShareMode>
           <ComponentContainer>
             <Components>
@@ -2503,7 +2596,7 @@ SPAWN</Text>
           <Min x="-1" y="-1" z="-1" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -5137,7 +5230,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Forward" Up="Right" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -6871,7 +6964,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Right" Up="Backward" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -8705,7 +8798,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Up" Up="Backward" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -9639,7 +9732,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Backward" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -9673,7 +9766,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Right" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -9707,7 +9800,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Forward" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -9741,7 +9834,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Left" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -28638,7 +28731,7 @@ SPAWN</Text>
           <Min x="-105" y="-5" z="0" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -28686,7 +28779,7 @@ SPAWN</Text>
           <Min x="0" y="-5" z="0" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -28735,7 +28828,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Forward" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -28784,7 +28877,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Backward" Up="Up" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -28833,7 +28926,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Forward" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -28882,7 +28975,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Backward" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -28931,7 +29024,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Backward" Up="Up" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -28980,7 +29073,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Backward" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29028,7 +29121,7 @@ SPAWN</Text>
           <Min x="-108" y="-2" z="0" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29076,7 +29169,7 @@ SPAWN</Text>
           <Min x="3" y="-2" z="0" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29125,7 +29218,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Forward" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29174,7 +29267,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Backward" Up="Up" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29223,7 +29316,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Forward" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29272,7 +29365,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Backward" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29321,7 +29414,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Backward" Up="Up" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29370,7 +29463,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Backward" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29418,7 +29511,7 @@ SPAWN</Text>
           <Min x="-105" y="-2" z="3" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29466,7 +29559,7 @@ SPAWN</Text>
           <Min x="0" y="-2" z="3" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29515,7 +29608,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Forward" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29564,7 +29657,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Backward" Up="Up" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29613,7 +29706,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Forward" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29662,7 +29755,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Backward" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29711,7 +29804,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Backward" Up="Up" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -29760,7 +29853,7 @@ SPAWN</Text>
           <BlockOrientation Forward="Backward" Up="Down" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ComponentContainer>
             <Components>
@@ -30816,7 +30909,7 @@ SPAWN</Text>
           <Min x="-105" y="-2" z="-105" />
           <ColorMaskHSV x="0" y="0.15" z="0.25" />
           <SkinSubtypeId>Weldless</SkinSubtypeId>
-          <Owner>144115188075855875</Owner>
+          <Owner>144115188075855906</Owner>
           <ShareMode>Faction</ShareMode>
           <ShowOnHUD>false</ShowOnHUD>
           <ShowInTerminal>true</ShowInTerminal>
@@ -30850,7 +30943,7 @@ SPAWN</Text>
             <SlotsGamepad />
           </Toolbar>
           <Delay>10000</Delay>
-          <CurrentTime>2364</CurrentTime>
+          <CurrentTime>6514</CurrentTime>
           <IsCountingDown>true</IsCountingDown>
           <Silent>false</Silent>
         </MyObjectBuilder_CubeBlock>
